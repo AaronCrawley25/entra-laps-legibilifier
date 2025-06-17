@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Entra LAPS Legibilifier",
+    "version": "1.0",
+    "description": "Makes the Entra LAPS password slightly more readable",
+    "permissions": [],
+    "host_permissions": ["https://entra.microsoft.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://entra.microsoft.com/*"],
+            "css": ["legible.css"],
+            "run_at": "document_start"
+        }
+    ]
+}
